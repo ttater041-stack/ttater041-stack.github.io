@@ -54,9 +54,19 @@
 
         <div class="hero-card">
           <h3>Visit our shop</h3>
-          <p>4811 Fayetteville Rd, Raleigh, NC, United States, North Carolina</p>
-          <p>Phone: (984) 200-7521</p>
-          <p>Email: legacyautomotive26@gmail.com</p>
+          <p>4811 Fayetteville Rd, Raleigh, NC</p>
+          <p>Phone: <a href="tel:+19842007521">(984) 200-7521</a></p>
+          <p>Email: <a href="mailto:legacyautomotive26@gmail.com">legacyautomotive26@gmail.com</a></p>
+          <div class="hero-card-meta">
+            <div>
+              <strong>Open hours</strong>
+              <span>Mon–Sat: 8am – 6pm</span>
+            </div>
+            <div>
+              <strong>Same-day estimates</strong>
+              <span>Quick, transparent pricing before work begins.</span>
+            </div>
+          </div>
           <h3>Why drivers choose us</h3>
           <ul>
             <li>Same-day diagnostics</li>
@@ -134,6 +144,31 @@
               <span>Roadside support</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section container process-section">
+        <div class="section-heading">
+          <p class="eyebrow">Our process</p>
+          <h2>Simple service from inspection to repair.</h2>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <div class="process-step">1</div>
+            <h3>Inspect & diagnose</h3>
+            <p>We start with a complete inspection, then explain the issue clearly and honestly.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-step">2</div>
+            <h3>Recommend solutions</h3>
+            <p>You get trusted options, fair pricing, and a timeline before any work begins.</p>
+          </article>
+          <article class="process-card">
+            <div class="process-step">3</div>
+            <h3>Repair with care</h3>
+            <p>Our certified technicians complete repairs reliably and check every detail afterward.</p>
+          </article>
         </div>
       </section>
 
@@ -227,14 +262,32 @@
           <h2>Stop by or schedule your visit today.</h2>
         </div>
 
-        <div class="contact-box">
-          <div>
-            <h3>Legacy Automotive</h3>
-            <p>4811 Fayetteville Rd, Raleigh, NC, United States, North Carolina</p>
-            <p>(984) 200-7521</p>
-            <p>legacyautomotive26@gmail.com</p>
+        <div class="contact-grid">
+          <div class="contact-box">
+            <div>
+              <h3>Legacy Automotive</h3>
+              <p>4811 Fayetteville Rd, Raleigh, NC</p>
+              <p><a href="tel:+19842007521">(984) 200-7521</a></p>
+              <p><a href="mailto:legacyautomotive26@gmail.com">legacyautomotive26@gmail.com</a></p>
+            </div>
+            <a class="btn btn-primary" href="mailto:legacyautomotive26@gmail.com">Email the Shop</a>
           </div>
-          <a class="btn btn-primary" href="mailto:legacyautomotive26@gmail.com">Email the Shop</a>
+
+          <form class="contact-form" action="mailto:legacyautomotive26@gmail.com" method="post" enctype="text/plain">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email or phone</span>
+              <input type="text" name="contact" placeholder="Email or phone" required />
+            </label>
+            <label>
+              <span>How can we help?</span>
+              <textarea name="message" placeholder="Tell us about your vehicle or service request" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send request</button>
+          </form>
         </div>
       </section>
     </main>
