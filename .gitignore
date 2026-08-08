@@ -1,0 +1,5 @@
+# Keep the full photo library local; publish only curated website images.
+img/*
+!img/logo.jpg
+!img/work/
+!img/work/**
