@@ -144,16 +144,20 @@ h2 { margin-bottom: 1.2rem; font-size: clamp(3rem, 5vw, 4.8rem); line-height: .9
 .quote-mark { height: 105px; color: var(--gold-bright); font-family: Georgia, serif; font-size: 8rem; line-height: .9; }
 .review-card blockquote { margin: 1.3rem 0; font-family: var(--display); font-size: 1.35rem; font-weight: 700; line-height: 1.18; text-transform: uppercase; }
 .review-card.featured blockquote { margin-top: auto; font-size: clamp(2rem, 3.2vw, 3rem); }
-.review-card p { color: #b8bdc3; }
+.review-card p { color: #62666b; }
+.review-card.featured p { color: #b8bdc3; }
 .review-card a { display: flex; justify-content: space-between; gap: 1rem; margin-top: auto; padding-top: 1.2rem; border-top: 1px solid currentColor; text-decoration: none; font-size: .78rem; font-weight: 800; }
 .review-card a span { color: #7a7f85; font-weight: 600; }
 .review-card.compact { min-height: 220px; }
-.review-card.yelp-card p { color: #62666b; font-size: .84rem; }
+.review-card:not(.featured) > p { font-size: .84rem; }
 .review-topline { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .review-source { padding: .25rem .55rem; color: #fff; background: #d32323; font-size: .62rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .review-source.google-source { color: #202124; background: #fff; border: 1px solid #dadce0; }
-.review-card.google-card { background: linear-gradient(145deg, #fff, #f2efe7); }
-.review-card.google-card p { color: #62666b; font-size: .84rem; }
+.review-source.facebook-source { background: #1877f2; }
+.review-details { margin: .2rem 0 1.2rem; border-top: 1px solid var(--line-light); border-bottom: 1px solid var(--line-light); }
+.review-details summary { padding: .75rem 0; color: #75530c; font-size: .72rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; cursor: pointer; }
+.review-details p { margin: 0; padding: 0 0 1rem; font-size: .82rem; line-height: 1.65; }
+.review-details[open] summary { color: var(--ink); }
 
 .contact { color: var(--white); background: #080a0d; }
 .contact-grid { display: grid; grid-template-columns: 1fr .8fr; gap: 6rem; align-items: center; }
@@ -234,8 +238,8 @@ h2 { margin-bottom: 1.2rem; font-size: clamp(3rem, 5vw, 4.8rem); line-height: .9
   .container { width: min(100% - 28px, 1160px); }
   .utility-bar { display: none; }
   .site-header { position: relative; }
-  .nav { min-height: 104px; }
-  .brand img { width: 88px; height: 70px; }
+  .nav { min-height: 124px; }
+  .brand img { width: 118px; height: 92px; }
   .brand { font-size: 1.05rem; }
   .nav-phone { padding-left: .8rem; }
   .nav-phone small { display: none; }
@@ -281,7 +285,7 @@ h2 { margin-bottom: 1.2rem; font-size: clamp(3rem, 5vw, 4.8rem); line-height: .9
   .mobile-call strong { font-family: var(--display); font-size: 1.1rem; }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 520px) {
   .brand span { display: none; }
   .hero-actions, .contact-actions { display: grid; }
   .button { width: 100%; }
