@@ -27,7 +27,20 @@
           "addressLocality": "Raleigh",
           "addressRegion": "NC"
         },
-        "openingHours": "Mo-Sa 08:00-18:00"
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "16:00"
+          }
+        ]
       }
     </script>
   </head>
@@ -297,7 +310,7 @@
             <div class="shop-details">
               <p class="shop-label">Visit the shop</p>
               <address>Legacy Automotive<br /><span>4811 Fayetteville Rd, Raleigh, NC</span></address>
-              <dl><div><dt>Hours</dt><dd>Monday&ndash;Saturday<br />8:00 AM&ndash;6:00 PM</dd></div><div><dt>Contact</dt><dd><a href="tel:+19842007521">(984) 200-7521</a><br /><a href="mailto:legacyautomotive26@gmail.com">legacyautomotive26@gmail.com</a></dd></div></dl>
+              <dl><div><dt>Hours</dt><dd>Monday&ndash;Friday: 8:00 AM&ndash;6:30 PM<br />Saturday: 8:00 AM&ndash;4:00 PM<br />Sunday: Closed</dd></div><div><dt>Contact</dt><dd><a href="tel:+19842007521">(984) 200-7521</a><br /><a href="mailto:legacyautomotive26@gmail.com">legacyautomotive26@gmail.com</a></dd></div></dl>
               <a class="directions-link" href="https://www.google.com/maps/search/?api=1&amp;query=4811+Fayetteville+Rd+Raleigh+NC" target="_blank" rel="noopener">Open directions in Google Maps &rarr;</a>
             </div>
           </div>
@@ -311,7 +324,7 @@
           </div>
           <form class="service-form" action="https://formsubmit.co/legacyautomotive26@gmail.com" method="post">
             <input type="hidden" name="_subject" value="New service request from the Legacy Automotive website" />
-            <input type="hidden" name="_next" value="https://ttater041-stack.github.io/thanks.html" />
+            <input type="hidden" name="_next" value="https://www.legacyautomotive.co/thanks.html" />
             <input type="hidden" name="_template" value="table" />
             <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
