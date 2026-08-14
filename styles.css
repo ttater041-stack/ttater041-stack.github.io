@@ -151,13 +151,20 @@ h2 { margin-bottom: 1.2rem; font-size: clamp(3rem, 5vw, 4.8rem); line-height: .9
 .review-card.yelp-card p { color: #62666b; font-size: .84rem; }
 .review-topline { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .review-source { padding: .25rem .55rem; color: #fff; background: #d32323; font-size: .62rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.review-source.google-source { color: #202124; background: #fff; border: 1px solid #dadce0; }
+.review-card.google-card { background: linear-gradient(145deg, #fff, #f2efe7); }
+.review-card.google-card p { color: #62666b; font-size: .84rem; }
 
 .contact { color: var(--white); background: #080a0d; }
 .contact-grid { display: grid; grid-template-columns: 1fr .8fr; gap: 6rem; align-items: center; }
 .contact-copy > p:not(.eyebrow) { max-width: 600px; color: #adb3ba; }
-.shop-card { padding: 2.2rem; border: 1px solid var(--line-dark); background: var(--panel); box-shadow: var(--shadow); }
+.shop-card { overflow: hidden; border: 1px solid var(--line-dark); background: var(--panel); box-shadow: var(--shadow); }
+.map-frame { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #0c0f12; border-bottom: 1px solid var(--line-dark); }
+.map-frame iframe { width: 100%; height: 100%; display: block; border: 0; filter: saturate(.85) contrast(1.03); }
+.shop-details { padding: 2.2rem; }
 .shop-label { color: var(--gold-bright); font-size: .72rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
 .shop-card address { font-family: var(--display); font-size: 2rem; font-style: normal; font-weight: 700; line-height: 1.05; text-transform: uppercase; }
+.shop-card address span { color: #bbc0c6; font-family: var(--body); font-size: .82rem; font-weight: 500; line-height: 1.5; text-transform: none; }
 .shop-card dl { margin: 2rem 0; border-top: 1px solid var(--line-dark); }
 .shop-card dl div { display: grid; grid-template-columns: 100px 1fr; padding: 1rem 0; border-bottom: 1px solid var(--line-dark); }
 .shop-card dt { color: var(--gold-bright); font-size: .7rem; font-weight: 800; text-transform: uppercase; }
@@ -264,7 +271,7 @@ h2 { margin-bottom: 1.2rem; font-size: clamp(3rem, 5vw, 4.8rem); line-height: .9
   .review-card.featured { min-height: 500px; grid-row: auto; }
   .review-card { min-height: 235px; }
   .contact-grid { gap: 3rem; }
-  .shop-card { padding: 1.5rem; }
+  .shop-details { padding: 1.5rem; }
   .service-form { padding: 1.25rem; }
   .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .footer-grid > p { text-align: left; }
