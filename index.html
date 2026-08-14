@@ -265,6 +265,60 @@
             <a class="directions-link" href="https://www.google.com/maps/search/?api=1&amp;query=4811+Fayetteville+Rd+Raleigh+NC" target="_blank" rel="noopener">Open in Google Maps &rarr;</a>
           </div>
         </div>
+
+        <div class="container request-panel">
+          <div class="request-heading">
+            <p class="eyebrow">Request service online</p>
+            <h2>Tell us what&rsquo;s going on.</h2>
+            <p>Share a few details about your vehicle and the service you need. The shop will follow up to discuss availability and next steps.</p>
+          </div>
+          <form class="service-form" action="https://formsubmit.co/legacyautomotive26@gmail.com" method="post">
+            <input type="hidden" name="_subject" value="New service request from the Legacy Automotive website" />
+            <input type="hidden" name="_next" value="https://ttater041-stack.github.io/thanks.html" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="form-grid">
+              <label>
+                <span>Name <b aria-hidden="true">*</b></span>
+                <input type="text" name="Name" autocomplete="name" placeholder="Your full name" required />
+              </label>
+              <label>
+                <span>Email <b aria-hidden="true">*</b></span>
+                <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                <span>Phone</span>
+                <input type="tel" name="Phone" autocomplete="tel" placeholder="(919) 555-0123" />
+              </label>
+              <label>
+                <span>Vehicle</span>
+                <input type="text" name="Vehicle" placeholder="Year, make, and model" />
+              </label>
+              <label class="form-wide">
+                <span>Service needed</span>
+                <select name="Service">
+                  <option value="Not sure">Not sure yet</option>
+                  <option value="Diagnostics">Diagnostics</option>
+                  <option value="Brakes and suspension">Brakes &amp; suspension</option>
+                  <option value="Engine or transmission">Engine or transmission</option>
+                  <option value="Oil and maintenance">Oil &amp; maintenance</option>
+                  <option value="AC or electrical">AC or electrical</option>
+                  <option value="Tires">Tires</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+              <label class="form-wide">
+                <span>How can we help? <b aria-hidden="true">*</b></span>
+                <textarea name="Message" rows="6" placeholder="Describe the issue, warning lights, sounds, or service you need." required></textarea>
+              </label>
+            </div>
+            <div class="form-footer">
+              <button class="button button-primary" type="submit">Send service request</button>
+              <p>Submitting this form does not confirm an appointment. We&rsquo;ll contact you to schedule.</p>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
