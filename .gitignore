@@ -3,3 +3,7 @@ img/*
 !img/logo.jpg
 !img/work/
 !img/work/**
+
+# Keep generated previews and print exports local.
+tmp/
+output/
