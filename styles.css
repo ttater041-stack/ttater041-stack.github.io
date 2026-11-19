@@ -43,8 +43,8 @@ a { color: inherit; }
 .menu-toggle[aria-expanded='true'] span:nth-child(2) { opacity: 0; }
 .menu-toggle[aria-expanded='true'] span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
-.menu-backdrop { position: fixed; inset: 0; z-index: 89; display: block; padding: 0; background: rgba(1, 2, 3, .72); border: 0; opacity: 0; pointer-events: none; backdrop-filter: blur(5px); transition: opacity .3s ease; }
-.site-menu { width: min(470px, 100%); position: fixed; z-index: 90; inset: 0 0 0 auto; display: flex; flex-direction: column; padding: 1.5rem clamp(1.5rem, 4vw, 3rem) 2rem; color: var(--white); background: linear-gradient(145deg, rgba(255,198,76,.08), transparent 32%), #090b0e; border-left: 1px solid var(--line-dark); box-shadow: -28px 0 80px rgba(0,0,0,.42); transform: translateX(102%); visibility: hidden; transition: transform .35s cubic-bezier(.22,.8,.32,1), visibility 0s linear .35s; overflow-y: auto; }
+.menu-backdrop { position: fixed; inset: 0; z-index: 109; display: block; padding: 0; background: rgba(1, 2, 3, .72); border: 0; opacity: 0; pointer-events: none; backdrop-filter: blur(5px); transition: opacity .3s ease; }
+.site-menu { width: min(470px, 100%); position: fixed; z-index: 110; inset: 0 0 0 auto; display: flex; flex-direction: column; padding: 1.5rem clamp(1.5rem, 4vw, 3rem) 2rem; color: var(--white); background: linear-gradient(145deg, rgba(255,198,76,.08), transparent 32%), #090b0e; border-left: 1px solid var(--line-dark); box-shadow: -28px 0 80px rgba(0,0,0,.42); transform: translateX(102%); visibility: hidden; transition: transform .35s cubic-bezier(.22,.8,.32,1), visibility 0s linear .35s; overflow-y: auto; }
 .site-menu::after { content: 'LEGACY'; position: fixed; right: -2.5rem; bottom: 8rem; color: rgba(255,255,255,.025); font-family: var(--display); font-size: 8rem; font-weight: 800; line-height: 1; pointer-events: none; transform: rotate(-90deg); transform-origin: right bottom; }
 .menu-open { overflow: hidden; }
 .menu-open .menu-backdrop { opacity: 1; pointer-events: auto; }
