@@ -60,19 +60,40 @@
           <img src="img/logo.jpg" alt="" />
           <span><strong>Legacy</strong> Automotive</span>
         </a>
-        <div class="nav-links">
-          <a href="#services">Services</a>
-          <a href="#work">Our Work</a>
-          <a href="#about">Why Legacy</a>
-          <a href="#reviews">Reviews</a>
-          <a href="#contact">Contact</a>
+        <div class="nav-actions">
+          <a class="nav-phone" href="tel:+19842007521" aria-label="Call Legacy Automotive at 984 200 7521">
+            <small>Call the shop</small>
+            <strong>(984) 200-7521</strong>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
-        <a class="nav-phone" href="tel:+19842007521" aria-label="Call Legacy Automotive at 984 200 7521">
-          <small>Call the shop</small>
-          <strong>(984) 200-7521</strong>
-        </a>
       </nav>
     </header>
+
+    <button class="menu-backdrop" type="button" aria-label="Close navigation menu" aria-hidden="true" tabindex="-1"></button>
+    <aside class="site-menu" id="site-menu" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Site navigation">
+      <div class="menu-topline">
+        <a class="menu-brand" href="#top" aria-label="Legacy Automotive home">
+          <img src="img/logo.jpg" alt="" />
+          <span>Legacy Automotive</span>
+        </a>
+        <button class="menu-close" type="button" aria-label="Close navigation menu"><span></span><span></span></button>
+      </div>
+      <nav class="menu-links" aria-label="Expanded navigation">
+        <a href="#services"><small>What we do</small><strong>Services</strong></a>
+        <a href="#work"><small>Inside the shop</small><strong>Our Work</strong></a>
+        <a href="#about"><small>The Legacy difference</small><strong>Why Legacy</strong></a>
+        <a href="#reviews"><small>Local customer stories</small><strong>Reviews</strong></a>
+        <a href="#contact"><small>Hours and directions</small><strong>Visit &amp; Contact</strong></a>
+        <a class="menu-inquiry" href="#request"><small>Tell us what is going on</small><strong>Request Service</strong></a>
+      </nav>
+      <div class="menu-contact">
+        <a href="tel:+19842007521"><small>Call the shop</small><strong>(984) 200-7521</strong></a>
+        <p>4811 Fayetteville Rd, Raleigh, NC<br />Mon&ndash;Fri 8:00 AM&ndash;6:30 PM &middot; Sat 8:00 AM&ndash;4:00 PM</p>
+      </div>
+    </aside>
 
     <main id="main">
       <section class="hero" id="top">
@@ -316,7 +337,7 @@
           </div>
         </div>
 
-        <div class="container request-panel">
+        <div class="container request-panel" id="request">
           <div class="request-heading">
             <p class="eyebrow">Request service online</p>
             <h2>Tell us what&rsquo;s going on.</h2>
