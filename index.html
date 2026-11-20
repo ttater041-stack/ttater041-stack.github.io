@@ -87,7 +87,8 @@
         <a href="#about"><small>The Legacy difference</small><strong>Why Legacy</strong></a>
         <a href="#reviews"><small>Local customer stories</small><strong>Reviews</strong></a>
         <a href="#contact"><small>Hours and directions</small><strong>Visit &amp; Contact</strong></a>
-        <a class="menu-inquiry" href="#request"><small>Tell us what is going on</small><strong>Request Service</strong></a>
+        <a href="#request"><small>Not ready to pick a time?</small><strong>Request Service</strong></a>
+        <a class="menu-inquiry" href="#book"><small>View live availability</small><strong>Book Appointment</strong></a>
       </nav>
       <div class="menu-contact">
         <a href="tel:+19842007521"><small>Call the shop</small><strong>(984) 200-7521</strong></a>
@@ -103,7 +104,7 @@
             <h1>Your Drive.<br /><em>Our Legacy.</em></h1>
             <p class="hero-lead">We make car care simple with honest recommendations, clear communication, and dependable work for the road ahead.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="tel:+19842007521">Call to schedule</a>
+              <a class="button button-primary" href="#book">Book an appointment</a>
               <a class="button button-ghost" href="#services">View services</a>
             </div>
             <ul class="check-list" aria-label="Service benefits">
@@ -130,7 +131,7 @@
         <div class="container quick-grid">
           <a href="tel:+19842007521"><span>01</span><div><small>Talk to our team</small><strong>Call the shop</strong></div></a>
           <a href="https://www.google.com/maps/search/?api=1&amp;query=4811+Fayetteville+Rd+Raleigh+NC" target="_blank" rel="noopener"><span>02</span><div><small>4811 Fayetteville Rd</small><strong>Get directions</strong></div></a>
-          <a href="mailto:legacyautomotive26@gmail.com?subject=Service%20request"><span>03</span><div><small>Tell us what&rsquo;s going on</small><strong>Email a request</strong></div></a>
+          <a href="#book"><span>03</span><div><small>View live availability</small><strong>Book online</strong></div></a>
         </div>
       </section>
 
@@ -321,8 +322,8 @@
           <div class="contact-copy">
             <p class="eyebrow">Let&rsquo;s get you back on the road</p>
             <h2>Ready when your car needs us.</h2>
-            <p>Call for the fastest response, email your service request, or stop by the shop during business hours.</p>
-            <div class="contact-actions"><a class="button button-primary" href="tel:+19842007521">Call (984) 200-7521</a><a class="button button-ghost" href="mailto:legacyautomotive26@gmail.com?subject=Service%20request">Email the shop</a></div>
+            <p>Choose an available appointment online, call for immediate help, or stop by the shop during business hours.</p>
+            <div class="contact-actions"><a class="button button-primary" href="#book">Book an appointment</a><a class="button button-ghost" href="tel:+19842007521">Call (984) 200-7521</a></div>
           </div>
           <div class="shop-card">
             <div class="map-frame">
@@ -337,11 +338,32 @@
           </div>
         </div>
 
+        <div class="container booking-panel" id="book">
+          <div class="booking-heading">
+            <p class="eyebrow">Book online</p>
+            <h2>Choose a time that works.</h2>
+            <p>Select an available service appointment below. Google Calendar will send your confirmation and appointment details.</p>
+            <ul class="booking-notes">
+              <li>Live appointment availability</li>
+              <li>Instant email confirmation</li>
+              <li>Easy rescheduling through Google Calendar</li>
+            </ul>
+            <a class="button button-ghost" href="https://calendar.app.google/UyxfSRLNMaUc9Rpu9" target="_blank" rel="noopener">Open full booking page</a>
+          </div>
+          <div class="booking-calendar">
+            <div class="booking-calendar-topline">
+              <span><i aria-hidden="true"></i> Live availability</span>
+              <small>Powered by Google Calendar</small>
+            </div>
+            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ33vU9bf-dAvVvJqtZ3GXog7D-H6eBE8nCKO_w_DGMT7Mv8waQyV8alrkO32NI1Yf7687AwENIq?gv=true" title="Book a vehicle service appointment with Legacy Automotive" loading="lazy"></iframe>
+          </div>
+        </div>
+
         <div class="container request-panel" id="request">
           <div class="request-heading">
-            <p class="eyebrow">Request service online</p>
+            <p class="eyebrow">Need help before booking?</p>
             <h2>Tell us what&rsquo;s going on.</h2>
-            <p>Share a few details about your vehicle and the service you need. The shop will follow up to discuss availability and next steps.</p>
+            <p>Not sure which service to choose or need to explain the issue first? Send the shop a few details and we&rsquo;ll follow up.</p>
           </div>
           <form class="service-form" action="https://formsubmit.co/legacyautomotive26@gmail.com" method="post">
             <input type="hidden" name="_subject" value="New service request from the Legacy Automotive website" />
@@ -396,12 +418,15 @@
     <footer class="footer">
       <div class="container footer-grid">
         <div class="footer-brand"><img src="img/logo.jpg" alt="" /><span><strong>Legacy Automotive</strong><small>Honest service. Dependable work.</small></span></div>
-        <div class="footer-links"><a href="#services">Services</a><a href="#work">Our Work</a><a href="#about">Why Legacy</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div>
+        <div class="footer-links"><a href="#services">Services</a><a href="#work">Our Work</a><a href="#reviews">Reviews</a><a href="#book">Book</a><a href="#contact">Contact</a></div>
         <p>&copy; 2026 Legacy Automotive.<br />Raleigh, North Carolina.</p>
       </div>
     </footer>
 
-    <div class="mobile-call"><a href="tel:+19842007521"><span>Call Legacy Automotive</span><strong>(984) 200-7521</strong></a></div>
+    <div class="mobile-call" aria-label="Quick appointment actions">
+      <a class="mobile-book" href="#book"><span>Book online</span><strong>Choose a time</strong></a>
+      <a class="mobile-phone" href="tel:+19842007521"><span>Call the shop</span><strong>(984) 200-7521</strong></a>
+    </div>
     <script src="carousel.js"></script>
   </body>
 </html>
