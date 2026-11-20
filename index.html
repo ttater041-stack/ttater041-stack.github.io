@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20261119-booking-card" />
+    <link rel="stylesheet" href="styles.css?v=20261119-booking-ticket" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -356,15 +356,21 @@
               <p>Pick a day. Choose a time.<br />You&rsquo;re booked.</p>
             </div>
             <div class="booking-card-copy">
-              <p class="booking-kicker">Legacy Automotive</p>
-              <h3>Vehicle Service Appointment</h3>
-              <dl class="booking-meta">
-                <div><dt>Appointment</dt><dd>60 minutes</dd></div>
-                <div><dt>Location</dt><dd>4811 Fayetteville Rd, Raleigh</dd></div>
-              </dl>
-              <p>Google Calendar shows the shop&rsquo;s current openings and handles your confirmation securely.</p>
+              <p class="booking-kicker">Legacy Automotive &middot; Online scheduling</p>
+              <h3>Reserve your service visit.</h3>
+              <p class="booking-intro">Set aside a convenient time to bring in your vehicle. The shop&rsquo;s latest openings are always shown on the booking page.</p>
+              <ol class="booking-flow" aria-label="How online booking works">
+                <li><span>01</span><div><strong>Choose an opening</strong><small>See live dates and times.</small></div></li>
+                <li><span>02</span><div><strong>Confirm your details</strong><small>Tell us who and what to expect.</small></div></li>
+                <li><span>03</span><div><strong>You&rsquo;re on the calendar</strong><small>Receive confirmation by email.</small></div></li>
+              </ol>
+              <div class="booking-facts" aria-label="Appointment details">
+                <span>60-minute appointment</span>
+                <span>Raleigh, NC</span>
+                <span>Secure Google booking</span>
+              </div>
               <a class="button button-primary" href="https://calendar.app.google/UyxfSRLNMaUc9Rpu9" target="_blank" rel="noopener">View times &amp; book</a>
-              <small>Opens the secure Google Calendar booking page.</small>
+              <small class="booking-disclaimer">Appointment length is the scheduled visit window, not an estimate of repair time.</small>
             </div>
           </article>
         </div>
