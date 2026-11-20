@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20261119-calendar-cleanup" />
+    <link rel="stylesheet" href="styles.css?v=20261119-booking-card" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -342,17 +342,31 @@
           <div class="booking-heading">
             <p class="eyebrow">Book online</p>
             <h2>Choose a time that works.</h2>
-            <p>Select an available service appointment below. Google Calendar will send your confirmation and appointment details.</p>
+            <p>Open the shop&rsquo;s live schedule, choose an available time, and receive your confirmation directly from Google Calendar.</p>
             <ul class="booking-notes">
               <li>Live appointment availability</li>
               <li>Instant email confirmation</li>
               <li>Easy rescheduling through Google Calendar</li>
             </ul>
-            <a class="button button-ghost" href="https://calendar.app.google/UyxfSRLNMaUc9Rpu9" target="_blank" rel="noopener">Open full booking page</a>
           </div>
-          <div class="booking-calendar">
-            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ33vU9bf-dAvVvJqtZ3GXog7D-H6eBE8nCKO_w_DGMT7Mv8waQyV8alrkO32NI1Yf7687AwENIq?gv=true" title="Book a vehicle service appointment with Legacy Automotive" loading="lazy"></iframe>
-          </div>
+          <article class="booking-card">
+            <div class="booking-card-visual" aria-hidden="true">
+              <span class="booking-card-label">Real-time scheduling</span>
+              <div class="calendar-mark"><span></span><strong>&#10003;</strong></div>
+              <p>Pick a day. Choose a time.<br />You&rsquo;re booked.</p>
+            </div>
+            <div class="booking-card-copy">
+              <p class="booking-kicker">Legacy Automotive</p>
+              <h3>Vehicle Service Appointment</h3>
+              <dl class="booking-meta">
+                <div><dt>Appointment</dt><dd>60 minutes</dd></div>
+                <div><dt>Location</dt><dd>4811 Fayetteville Rd, Raleigh</dd></div>
+              </dl>
+              <p>Google Calendar shows the shop&rsquo;s current openings and handles your confirmation securely.</p>
+              <a class="button button-primary" href="https://calendar.app.google/UyxfSRLNMaUc9Rpu9" target="_blank" rel="noopener">View times &amp; book</a>
+              <small>Opens the secure Google Calendar booking page.</small>
+            </div>
+          </article>
         </div>
 
         <div class="container request-panel" id="request">
